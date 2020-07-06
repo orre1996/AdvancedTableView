@@ -239,12 +239,6 @@ extension ViewController: UITableViewDelegate {
 
 // MARK: - Scroll view
 extension ViewController {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.contentOffset.y < 0 {
-            scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
-        }
-    }
-    
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y != 0 {
             scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
